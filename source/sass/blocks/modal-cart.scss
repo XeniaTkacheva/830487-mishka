@@ -1,0 +1,31 @@
+.modal-cart__wrapper {
+  display: block;
+  max-width: 566px;
+  padding-top: 36px;
+  padding-right: 30px;
+  padding-bottom: 46px;
+  padding-left: 30px;
+}
+
+.modal-cart__title {
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
+  background-color: $white;
+}
+
+.modal-cart__button {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  border: none;
+  background: $color-light1;
+}

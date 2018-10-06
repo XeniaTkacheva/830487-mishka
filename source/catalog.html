@@ -2,32 +2,36 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:700&amp;subset=cyrillic" rel="stylesheet">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/mishka-logo-mobile-svg.svg" alt="Логотип магазина &laquo;Мишка&raquo;" width="86" height="35">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list default-list">
             <li class="site-list__item">
-              <a>Каталог товаров</a>
+              <a class="site-list__link">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <div class="main-nav__list header-search">
-            <a href="#" class="search-list__btn">Поиск по сайту</a>
+            <a class="header-search__link" href="#" class="search-list__btn">Поиск по сайту</a>
           </div>
           <ul class="main-nav__list cart-list default-list">
             <li class="cart-list__item">
-              <a href="#" class="cart-list__link">Перейти к корзине</a>
+              <a class="cart-list__link" href="#">Перейти к корзине</a>
             </li>
           </ul>
         </div>
@@ -81,9 +85,9 @@
           <h2 class="making__title">Процесс производства</h2>
           <div class="making_demo">
             <video class="making__video" width="260" height="150" poster="video/1.jpg">
-              <source src="video/1.ogv" type='video/ogg; codecs="theora, vorbis"'>
-              <source src="video/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-              <source src="video/1.webm" type='video/webm; codecs="vp8, vorbis"'>
+              <source src="#" type='video/ogg; codecs="theora, vorbis"'>
+              <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+              <source src="#" type='video/webm; codecs="vp8, vorbis"'>
               Элемент video не поддерживается вашим браузером.
               <a class="making__video-download" href="video/1.mp4">Скачайте видео</a>
             </video>
@@ -97,7 +101,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
-          <img src="img/mishka-logo-mobile-svg.svg" alt="Логотип магазина &laquo;Мишка&raquo;" class="page-footer__logo-image" width="86" height="35">
+          <img src="img/logo-footer.svg" alt="Логотип магазина &laquo;Мишка&raquo;" class="page-footer__logo-image" width="86" height="35">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">

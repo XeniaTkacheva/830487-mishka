@@ -1,0 +1,38 @@
+.features {
+
+}
+
+.features__wrapper {
+  display: block;
+  padding-top: 27px;
+  padding-right: 30px;
+  padding-bottom: 26px;
+  padding-left: 30px;
+}
+
+.features__title {
+  margin: 0;
+  padding-bottom: 2px;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
+  background-color: $white;
+}
+
+.features__item {
+  padding-top: 83px;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $black;
+  background-color: $white;
+  &--nature {
+  background:transparent url('../img/icon-feature-flower.svg') left 7px top no-repeat;
+  }
+  &--price {
+
+  }
+}
