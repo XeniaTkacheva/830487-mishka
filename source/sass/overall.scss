@@ -15,8 +15,6 @@
 }
 
 body {
-  min-width: 320px;
-  max-width: 768px; /*временно*/
   margin: 0;
   padding: 0;
 
@@ -24,9 +22,8 @@ body {
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-  color: #444444;
-  background-color: #ffffff;
-
+  color: $greyish-dark;
+  background-color: $white;
 }
 
 .visually-hidden {
@@ -53,8 +50,11 @@ img {
   padding: 0;
 }
 
-.container {/*    временно*/
+.container {
   display: block;
   box-sizing: border-box;
+  min-width: 320px;
+  max-width: 768px; /*временно*/
   width: 320px; /*временно*/
+  outline: 1px solid blue; /*временно*/
 }
