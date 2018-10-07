@@ -1,0 +1,53 @@
+.handiworks {
+  background: $greyish-white;
+  background: url(../img/hero-desktop@1x.jpg) no-repeat top -10px left 50% / auto 74% $greyish-white;
+}
+
+.handiworks__details {
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
+  // background-color: $greyish-white;
+}
+
+.handiworks__title {
+  margin: 0;
+  padding: 0;
+  font-size: 27px;
+  line-height: 30px;
+  color: $very-dark;
+  text-align: center;
+  padding-top: 73px;
+  padding-right: 30px;
+  padding-bottom: 122px;
+  padding-left: 28px;
+}
+
+.handiworks__link {
+  display: block;
+  padding-top: 25px;
+  padding-right: 160px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $white;
+  background-color: $color-light1;
+  &:hover {
+    background-color: $color-light2;
+
+  }
+}
+
+.handiworks__link--toys {
+  background-color: $color-middle1;
+  &:hover {
+    background-color: $color-middle2;
+
+  }
+}
