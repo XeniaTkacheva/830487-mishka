@@ -1,21 +1,26 @@
 .cart-list__link {
   display: block;
-  padding-top: 29px;
-  padding-right: 30px;
-  padding-bottom: 26px;
-  padding-left: 76px;
+  padding: 29px 30px 26px 76px;
 
   text-decoration: none;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  color: $black;
-  background-color: $white;
   box-shadow: 0px 1px 0 0 $grey-white, inset 0px 1px 0 0 $grey-white;
-  &:hover {
-    color: rgba($black, 0.6);
+  @include black-white-hov60-30;
+}
+
+@media (min-width: $tablet-width) {
+  .cart-list {
+    width: 265px;
   }
-  &:active {
-    color: rgba($black, 0.3);
+
+  .cart-list__link {
+    padding: 32px 0 32px 83px;
+    box-shadow: none;
   }
+}
+
+@media (min-width: $desktop-width) {
+
 }
