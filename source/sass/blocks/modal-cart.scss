@@ -26,3 +26,10 @@
   border: none;
   background: $color-light1;
 }
+
+@media (min-width: $tablet-width) {
+  .modal-cart__wrapper {
+    padding: 50px 108px 46px;
+    margin: 0 auto;
+  }
+}
