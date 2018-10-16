@@ -1,12 +1,11 @@
 .customer-about__list {
   padding-top: 19px;
   margin-bottom: 9px;
-    // outline: 1px solid yellowgreen;
-
 }
 
 .customer-about__names {
   display: block;
+
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -22,6 +21,7 @@
   padding-top: 17px;
   padding-bottom: 15px;
   margin-bottom: 22px;
+
   font-size: 17px;
   line-height: 18px;
   color: $greyish-dark;
@@ -42,23 +42,28 @@
   .customer-about__wrapper {
     box-sizing: border-box;
     display: flex;
-    padding: 50px 50px 30px;
+    padding: 45px 50px 30px;
   }
+
   .customer-about__list {
     margin: 0;
+    padding-top: 7px;
     width: 100%;
   }
+
   .customer-about__item {
     display: flex;
   }
+
   .customer-about__names {
     font-size: 19px;
     line-height: 19px;
     display: inline-block;
+    padding-top: 16px;
     padding-right: 25px;
   }
+
   .customer-about__text {
     display: inline-block;
-    // width: auto;
   }
 }

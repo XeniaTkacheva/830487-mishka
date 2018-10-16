@@ -15,7 +15,6 @@
   padding: 0;
   flex-shrink: 0;
 
-
   font-size: 17px;
   line-height: 17px;
   font-weight: 700;
@@ -27,13 +26,12 @@
   position: relative;
   background: $white;
   padding-right: 20px;
-
 }
 
 @media (max-width: $mobile-only-width) {
   .form__title {
     &::before {
-          content: "";
+      content: "";
       display: block;
       position: absolute;
       width: 100%;
@@ -45,58 +43,9 @@
   }
 }
 
-.form__user-phone,
-.form__user-mail {
-  box-sizing: border-box;
-  border: none;
-  box-shadow: inset 0px -2px 0 0 $black;
-  padding-top: 12px;
-  padding-right: 43px;
-  padding-bottom: 19px;
-  margin-bottom: 31px;
-  width: 100%;
-  min-width: 260px;
-  font-size: 17px;
-  &::placeholder {
-    font-size: 17px;
-    color: rgba($greyish-dark, 0.3);
-  }
-  &:hover {
-  box-shadow: inset 0px -2px 0 0 $color-light;
-  }
-  &:active {
-  box-shadow: inset 0px -2px 0 0 $color-light;
-  }
-}
-
-.form__order-about {
-  box-sizing: border-box;
-  border: none;
-  margin-top: 16px;
-  margin-bottom: 5px;
-  width: 100%;
-  min-width: 260px;
-  padding: 12px 17px 12px 17px;
-
-  font-size: 17px;
-  border: 2px solid $greyish-dark;
-  background-color: $white;
-  &::placeholder {
-    font-size: 17px;
-    color: rgba($greyish-dark, 0.3);
-  }
-  &:hover {
-    border: 2px solid $color-light;
-  }
-  &:active {
-    border: 2px solid $color-light;
-  }
-}
-
 .form__legend {
   display: inline-block;
   margin-bottom: 28px;
-
   font-size: 14px;
 }
 
@@ -120,38 +69,34 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form__set {
-    // outline: 1px solid green;
-  }
-
   .form__title {
     display: block;
     margin: 0;
     width: 167px;
     padding-top: 24px;
     background-color: transparent;
-    // outline: 1px solid red;
   }
+
   .form__title-name {
     background-color: transparent;
   }
 
-  .form__user-phone,
-  .form__user-mail {
-    margin: 0;
-    background-color: transparent;
-  }
-  .form__order-about {
-    margin: 0;
-  }
   .form__legend {
     margin: 0;
-    display: inline-block;
-    text-align: right;
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 8px;
   }
+
   .form__button {
-    display: inline-block;
     width: auto;
-    margin-left: 50px;
+    padding: 14px 30px;
+  }
+
+  .form__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 24px 50px 50px;
   }
 }

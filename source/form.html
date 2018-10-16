@@ -62,11 +62,8 @@
               Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
             </p>
             <form class="order__form form" action="https://echo.htmlacademy.ru" method="post">
-
-
               <fieldset class="form__set product-type">
                 <div class="product-type__wrapper">
-                  <!-- <legend class="form__set-name">Тип</legend> -->
                   <h3 class="form__title product-typ__title"><span class="form__title-name">Тип</span></h3>
                   <ul class="product-type__list default-list">
                     <li class="product-type__item">
@@ -80,12 +77,8 @@
                   </ul>
                 </div>
               </fieldset>
-
-
-
               <fieldset class="form__set colour">
                 <div class="colour__wrapper">
-                  <!-- <legend class="form__set-name">Цвет</legend> -->
                   <h3 class="form__title colour__title"><span class="form__title-name">Цвет</span></h3>
                   <ul class="colour__list default-list">
                     <li class="colour__item">
@@ -115,8 +108,6 @@
                   </ul>
                 </div>
               </fieldset>
-
-
               <fieldset class="form__set customer-about">
                 <div class="customer-about__wrapper">
                   <!-- <legend class="form__set-name">ФИО</legend> -->
@@ -137,43 +128,32 @@
                   </ul>
                 </div>
               </fieldset>
-
-
-              <fieldset class="form__set user-phone">
-                <div class="user-phone__wrapper">
-                  <!-- <legend class="form__set-name">тел</legend> -->
+              <fieldset class="form__set connect">
+                <div class="connect__wrapper-phone">
                   <h3 class="form__title"><span class="form__title-name">тел</span></h3>
                   <label class="visually-hidden" for="user-phone">Введите ваш телефон</label>
-                  <input  class="form__user-phone" type="tel" name="user-phone" id="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                  <input  class="connect__user-phone" type="tel" name="user-phone" id="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                 </div>
-              </fieldset>
-
-
-              <fieldset class="form__set user-mail">
-                <div class="user-mail__wrapper">
-                  <!-- <legend class="form__set-name">E-mail</legend> -->
+                <div class="connect__wrapper-mail">
                   <h3 class="form__title"><span class="form__title-name">E-mail</span></h3>
                   <label class="visually-hidden" for="user-mail">Ваш адрес электронной почты</label>
-                  <input type="email" class="form__user-mail" name="user-mail" id="user-mail" placeholder="Ваш Email*" required>
+                  <input type="email" class="connect__user-mail" name="user-mail" id="user-mail" placeholder="Ваш Email*" required>
                 </div>
               </fieldset>
-
-
               <fieldset class="form__set order-about">
                 <div class="order-about__wrapper">
-                  <!-- <legend class="form__set-name">Доп</legend> -->
                   <h3 class="form__title"><span class="form__title-name">Доп</span></h3>
                   <label class="visually-hidden" for="order-about">Ваши пожелания к заказу</label>
-                  <textarea class="form__order-about" name="order-about" id="order-about" rows="6" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                  <textarea class="order-about__text" name="order-about" id="order-about" rows="6" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </div>
               </fieldset>
-
-
-              <small class="form__legend">
-                *Поля обязательны для заполнения
-              </small>
-              <div class="form__for-button">
-                <button class="form__button button" type="submit">Отправить заказ</button>
+              <div class="form__footer">
+                <small class="form__legend">
+                  *Поля обязательны для заполнения
+                </small>
+                <div class="form__for-button">
+                  <button class="form__button button" type="submit">Отправить заказ</button>
+                </div>
               </div>
             </form>
           </section>

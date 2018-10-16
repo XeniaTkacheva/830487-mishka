@@ -1,6 +1,5 @@
 .cards__details {
   display: block;
-  // margin-bottom: 6px;
 
   text-decoration: none;
   font-size: 17px;
@@ -60,15 +59,13 @@
     width: 334px;
     height: 334px;
   }
-  .cards__specification{
-
-  }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__list {
     display: flex;
   }
+
   .cards__image {
     width: 316px;
     height: 462px;

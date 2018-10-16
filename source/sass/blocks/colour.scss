@@ -1,14 +1,15 @@
 .colour__list {
   margin-top: 24px;
   margin-bottom: 10px;
-  // outline: 1px solid yellowgreen;
 }
 
 .colour__description {
+  box-sizing: border-box;
   display: block;
   padding-top: 12px;
   padding-bottom: 31px;
   padding-left: 62px;
+
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -19,26 +20,34 @@
   .colour {
     background-color: $greyish-white;
   }
+
   .colour__wrapper {
     box-sizing: border-box;
     display: flex;
-    padding: 50px 50px 30px;
+    padding: 50px 50px 26px;
   }
+
   .colour__list {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
   }
-  .colour__item {
-    width: 50%;
-  }
+
   .colour__title {
     padding-top: 12px;
   }
+
   .colour__description {
     font-size: 19px;
     line-height: 19px;
-    padding-left: 80px;
+    padding: 18px 5px 40px 80px ;
   }
 
+    .colour__item {
+    width: 50%;
+  }
+
+  .colour__description:nth-child(2n) {
+    padding-left: 90px;
+  }
 }
