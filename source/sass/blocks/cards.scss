@@ -1,6 +1,6 @@
 .cards__details {
   display: block;
-  margin-bottom: 6px;
+  // margin-bottom: 6px;
 
   text-decoration: none;
   font-size: 17px;
@@ -46,5 +46,31 @@
 }
 
 .cards__image {
+  display: block;
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .cards__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .cards__image {
+    width: 334px;
+    height: 334px;
+  }
+  .cards__specification{
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+  }
+  .cards__image {
+    width: 316px;
+    height: 462px;
+  }
 }

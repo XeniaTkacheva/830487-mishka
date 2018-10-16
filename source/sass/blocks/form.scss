@@ -2,21 +2,47 @@
   margin: 0;
   padding: 0;
   border: none;
-  border-top: 1px solid $color-light; /*временно из-за Firefox. Позже сделаю через ::after */
 }
 
-.form__set-name {
-  display: block;
+.form__title {
   box-sizing: border-box;
-  min-width: 62px;
-  padding: 0;
-  padding-right: 15px;
+  margin: 0;
   margin-bottom: 9px;
+  display: block;
+  background: $white;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0;
+  flex-shrink: 0;
+
+
   font-size: 17px;
   line-height: 17px;
   font-weight: 700;
   text-transform: uppercase;
   color: $color-light1;
+}
+
+.form__title-name {
+  position: relative;
+  background: $white;
+  padding-right: 20px;
+
+}
+
+@media (max-width: $mobile-only-width) {
+  .form__title {
+    &::before {
+          content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 50%;
+      left: 0;
+      background: $color-light;
+    }
+  }
 }
 
 .form__user-phone,
@@ -26,8 +52,8 @@
   box-shadow: inset 0px -2px 0 0 $black;
   padding-top: 12px;
   padding-right: 43px;
-  padding-bottom: 17px;
-  margin-bottom: 32px;
+  padding-bottom: 19px;
+  margin-bottom: 31px;
   width: 100%;
   min-width: 260px;
   font-size: 17px;
@@ -46,10 +72,11 @@
 .form__order-about {
   box-sizing: border-box;
   border: none;
-  margin-top: 15px;
+  margin-top: 16px;
+  margin-bottom: 5px;
   width: 100%;
   min-width: 260px;
-  padding: 12px 17px 7px 17px;
+  padding: 12px 17px 12px 17px;
 
   font-size: 17px;
   border: 2px solid $greyish-dark;
@@ -68,14 +95,14 @@
 
 .form__legend {
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   font-size: 14px;
 }
 
 .form__button {
   font-size: 17px;
-  line-height: 17px;
+  line-height: 18px;
   font-weight: 700;
   text-transform: uppercase;
   color: $greyish-dark;
@@ -89,5 +116,42 @@
     background-color: $greyish-dark;
     color: rgba($white, 0.3);
     cursor: pointer;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__set {
+    // outline: 1px solid green;
+  }
+
+  .form__title {
+    display: block;
+    margin: 0;
+    width: 167px;
+    padding-top: 24px;
+    background-color: transparent;
+    // outline: 1px solid red;
+  }
+  .form__title-name {
+    background-color: transparent;
+  }
+
+  .form__user-phone,
+  .form__user-mail {
+    margin: 0;
+    background-color: transparent;
+  }
+  .form__order-about {
+    margin: 0;
+  }
+  .form__legend {
+    margin: 0;
+    display: inline-block;
+    text-align: right;
+  }
+  .form__button {
+    display: inline-block;
+    width: auto;
+    margin-left: 50px;
   }
 }

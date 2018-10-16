@@ -1,9 +1,11 @@
 .customer-about__list {
   padding-top: 19px;
   margin-bottom: 9px;
+    // outline: 1px solid yellowgreen;
+
 }
 
-.customer-about__title {
+.customer-about__names {
   display: block;
   font-size: 17px;
   line-height: 18px;
@@ -33,5 +35,30 @@
   }
     &:active {
     border-bottom: 2px solid $color-light;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .customer-about__wrapper {
+    box-sizing: border-box;
+    display: flex;
+    padding: 50px 50px 30px;
+  }
+  .customer-about__list {
+    margin: 0;
+    width: 100%;
+  }
+  .customer-about__item {
+    display: flex;
+  }
+  .customer-about__names {
+    font-size: 19px;
+    line-height: 19px;
+    display: inline-block;
+    padding-right: 25px;
+  }
+  .customer-about__text {
+    display: inline-block;
+    // width: auto;
   }
 }

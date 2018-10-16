@@ -39,7 +39,7 @@
             </ul>
             <div class="main-nav__list header-search">
               <a class="header-search__link" href="#">
-                <img class="header-search__icon" src="img/icon-search.svg" alt="Иконка Лупа" class="header-search__icon" width="18" height="18">Поиск по сайту
+                <img class="header-search__icon" src="img/icon-search.svg" alt="Иконка Лупа" width="18" height="18">Поиск по сайту
               </a>
             </div>
             <ul class="main-nav__list cart-list default-list">
@@ -62,80 +62,113 @@
               Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
             </p>
             <form class="order__form form" action="https://echo.htmlacademy.ru" method="post">
+
+
               <fieldset class="form__set product-type">
-                <legend class="form__set-name">Тип</legend>
-                <ul class="product-type__list default-list">
-                  <li class="product-type__item">
-                    <input class="visually-hidden" type="radio" id="type1" name="product-type" value="interior" checked>
-                    <label class="product-type__description" for="type1">Аксессуар для интерьера</label>
-                  </li>
-                  <li class="product-type__item">
-                    <input class="visually-hidden" type="radio" id="type2" name="product-type" value="toy">
-                    <label class="product-type__description" for="type2">Детская игрушка</label>
-                  </li>
-                </ul>
+                <div class="product-type__wrapper">
+                  <!-- <legend class="form__set-name">Тип</legend> -->
+                  <h3 class="form__title product-typ__title"><span class="form__title-name">Тип</span></h3>
+                  <ul class="product-type__list default-list">
+                    <li class="product-type__item">
+                      <input class="visually-hidden" type="radio" id="type1" name="product-type" value="interior" checked>
+                      <label class="product-type__description" for="type1">Аксессуар для интерьера</label>
+                    </li>
+                    <li class="product-type__item">
+                      <input class="visually-hidden" type="radio" id="type2" name="product-type" value="toy">
+                      <label class="product-type__description" for="type2">Детская игрушка</label>
+                    </li>
+                  </ul>
+                </div>
               </fieldset>
+
+
+
               <fieldset class="form__set colour">
-                <legend class="form__set-name">Цвет</legend>
-                <ul class="colour__list default-list">
-                  <li class="colour__item">
-                    <input class="visually-hidden" type="checkbox" id="colour1" name="colour" value="white" checked>
-                    <label class="colour__description" for="colour1">Белый</label>
-                  </li>
-                  <li class="colour__item">
-                    <input class="visually-hidden" type="checkbox" id="colour2" name="colour" value="gray" checked>
-                    <label class="colour__description" for="colour2">Серый</label>
-                  </li>
-                  <li class="colour__item">
-                    <input class="visually-hidden" type="checkbox" id="colour3" name="colour" value="tiffany">
-                    <label class="colour__description" for="colour3">&laquo;Тиффани&raquo;</label>
-                  </li>
-                  <li class="colour__item">
-                    <input class="visually-hidden" type="checkbox" id="colour4" name="colour" value="black">
-                    <label class="colour__description" for="colour4">Черный</label>
-                  </li>
-                  <li class="colour__item">
-                    <input class="visually-hidden" type="checkbox" id="colour5" name="colour" value="pink">
-                    <label class="colour__description" for="colour5">Розовый</label>
-                  </li>
-                  <li class="colour__item">
-                    <input class="visually-hidden" type="checkbox" id="colour6" name="colour" value="orange">
-                    <label class="colour__description" for="colour6">Оранжевый</label>
-                  </li>
-                </ul>
+                <div class="colour__wrapper">
+                  <!-- <legend class="form__set-name">Цвет</legend> -->
+                  <h3 class="form__title colour__title"><span class="form__title-name">Цвет</span></h3>
+                  <ul class="colour__list default-list">
+                    <li class="colour__item">
+                      <input class="visually-hidden" type="checkbox" id="colour1" name="colour" value="white" checked>
+                      <label class="colour__description" for="colour1">Белый</label>
+                    </li>
+                    <li class="colour__item">
+                      <input class="visually-hidden" type="checkbox" id="colour2" name="colour" value="gray" checked>
+                      <label class="colour__description" for="colour2">Серый</label>
+                    </li>
+                    <li class="colour__item">
+                      <input class="visually-hidden" type="checkbox" id="colour3" name="colour" value="tiffany">
+                      <label class="colour__description" for="colour3">&laquo;Тиффани&raquo;</label>
+                    </li>
+                    <li class="colour__item">
+                      <input class="visually-hidden" type="checkbox" id="colour4" name="colour" value="black">
+                      <label class="colour__description" for="colour4">Черный</label>
+                    </li>
+                    <li class="colour__item">
+                      <input class="visually-hidden" type="checkbox" id="colour5" name="colour" value="pink">
+                      <label class="colour__description" for="colour5">Розовый</label>
+                    </li>
+                    <li class="colour__item">
+                      <input class="visually-hidden" type="checkbox" id="colour6" name="colour" value="orange">
+                      <label class="colour__description" for="colour6">Оранжевый</label>
+                    </li>
+                  </ul>
+                </div>
               </fieldset>
+
+
               <fieldset class="form__set customer-about">
-                <legend class="form__set-name">ФИО</legend>
-                <ul class="customer-about__list default-list">
-                  <li class="customer-about__item">
-                    <label class="customer-about__title" for="name1">Имя:</label>
-                    <input class="customer-about__text" type="text" id="name1" name="first-name" placeholder="Введите ваше имя*" required>
-                  </li>
-                  <li class="customer-about__item">
-                    <label class="customer-about__title" for="name2">Фамилия:</label>
-                    <input class="customer-about__text" type="text" id="name2" name="last-name" placeholder="Укажите фамилию*" required>
-                  </li>
-                  <li class="customer-about__item">
-                    <label class="customer-about__title" for="name3">Отчество:</label>
-                    <input class="customer-about__text" type="text" id="name3" name="middle-name" placeholder="Отчество, если желаете">
-                  </li>
-                </ul>
+                <div class="customer-about__wrapper">
+                  <!-- <legend class="form__set-name">ФИО</legend> -->
+                  <h3 class="form__title customer-about__title"><span class="form__title-name">ФИО</span></h3>
+                  <ul class="customer-about__list default-list">
+                    <li class="customer-about__item">
+                      <label class="customer-about__names" for="name1">Имя:</label>
+                      <input class="customer-about__text" type="text" id="name1" name="first-name" placeholder="Введите ваше имя*" required>
+                    </li>
+                    <li class="customer-about__item">
+                      <label class="customer-about__names" for="name2">Фамилия:</label>
+                      <input class="customer-about__text" type="text" id="name2" name="last-name" placeholder="Укажите фамилию*" required>
+                    </li>
+                    <li class="customer-about__item">
+                      <label class="customer-about__names" for="name3">Отчество:</label>
+                      <input class="customer-about__text" type="text" id="name3" name="middle-name" placeholder="Отчество, если желаете">
+                    </li>
+                  </ul>
+                </div>
               </fieldset>
-              <fieldset class="form__set">
-                <legend class="form__set-name">тел</legend>
-                <label class="visually-hidden" for="user-phone">Введите ваш телефон</label>
-                <input  class="form__user-phone" type="tel" name="user-phone" id="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+
+
+              <fieldset class="form__set user-phone">
+                <div class="user-phone__wrapper">
+                  <!-- <legend class="form__set-name">тел</legend> -->
+                  <h3 class="form__title"><span class="form__title-name">тел</span></h3>
+                  <label class="visually-hidden" for="user-phone">Введите ваш телефон</label>
+                  <input  class="form__user-phone" type="tel" name="user-phone" id="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                </div>
               </fieldset>
-              <fieldset class="form__set">
-                <legend class="form__set-name">E-mail</legend>
-                <label class="visually-hidden" for="user-mail">Ваш адрес электронной почты</label>
-                <input type="email" class="form__user-mail" name="user-mail" id="user-mail" placeholder="Ваш Email*" required>
+
+
+              <fieldset class="form__set user-mail">
+                <div class="user-mail__wrapper">
+                  <!-- <legend class="form__set-name">E-mail</legend> -->
+                  <h3 class="form__title"><span class="form__title-name">E-mail</span></h3>
+                  <label class="visually-hidden" for="user-mail">Ваш адрес электронной почты</label>
+                  <input type="email" class="form__user-mail" name="user-mail" id="user-mail" placeholder="Ваш Email*" required>
+                </div>
               </fieldset>
-              <fieldset class="form__set">
-                <legend class="form__set-name">Доп</legend>
-                <label class="visually-hidden" for="order-about">Ваши пожелания к заказу</label>
-                <textarea class="form__order-about" name="order-about" id="order-about" rows="6" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+
+
+              <fieldset class="form__set order-about">
+                <div class="order-about__wrapper">
+                  <!-- <legend class="form__set-name">Доп</legend> -->
+                  <h3 class="form__title"><span class="form__title-name">Доп</span></h3>
+                  <label class="visually-hidden" for="order-about">Ваши пожелания к заказу</label>
+                  <textarea class="form__order-about" name="order-about" id="order-about" rows="6" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                </div>
               </fieldset>
+
+
               <small class="form__legend">
                 *Поля обязательны для заполнения
               </small>
@@ -150,7 +183,7 @@
     <footer class="page-footer">
       <div class="container">
         <div class="page-footer__wrapper">
-          <a class="page-footer__logo">
+          <a class="page-footer__logo" href="index.html">
             <img src="img/logo-footer.svg" alt="Логотип магазина &laquo;Мишка&raquo;" class="page-footer__logo-image" width="86" height="35">
           </a>
           <div class="page-footer__social social">

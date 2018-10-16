@@ -61,7 +61,12 @@
               <ul class="catalog__list default-list">
                 <li class="catalog__item cards">
                   <a href="#" class="catalog__image cards__details">
-                    <img class="cards__image" src="img/photo-hare-mobile@1x.jpg" alt="Фото Зайчик-попрыгайчик" width="260" height="195">
+                    <picture>
+                      <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg">
+                      <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
+
+                      <img class="cards__image" src="img/photo-hare-mobile@1x.jpg" alt="Фото Зайчик-попрыгайчик" width="260" height="195">
+                    </picture>
                   </a>
                   <div class="catalog__description">
                     <a href="#" class="cards__details">
@@ -74,7 +79,11 @@
                 </li>
                 <li class="catalog__item cards">
                   <a href="#" class="cards__details">
-                    <img class="cards__image" src="img/photo-bowl-mobile@1x.jpg" alt="Фото Корзинка для белья" width="260" height="195">
+                    <picture>
+                      <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
+                      <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
+                      <img class="cards__image" src="img/photo-bowl-mobile@1x.jpg" alt="Фото Корзинка для белья" width="260" height="195">
+                    </picture>
                   </a>
                   <div class="catalog__description">
                     <a href="#" class="cards__details">
@@ -87,7 +96,11 @@
                 </li>
                 <li class="catalog__item cards">
                   <a href="#" class="cards__details">
-                    <img class="cards__image" src="img/photo-toys-mobile@1x.jpg" alt="Фото Большая корзинка для игрушек" width="260" height="195">
+                    <picture>
+                      <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg">
+                      <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
+                      <img class="cards__image" src="img/photo-toys-mobile@1x.jpg" alt="Фото Большая корзинка для игрушек" width="260" height="195">
+                    </picture>
                   </a>
                   <div class="catalog__description">
                     <a href="#" class="cards__details">
@@ -123,7 +136,7 @@
     <footer class="page-footer">
       <div class="container">
         <div class="page-footer__wrapper">
-          <a class="page-footer__logo">
+          <a class="page-footer__logo" href="index.html">
             <img src="img/logo-footer.svg" alt="Логотип магазина &laquo;Мишка&raquo;" class="page-footer__logo-image" width="86" height="35">
           </a>
           <div class="page-footer__social social">

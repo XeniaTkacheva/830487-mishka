@@ -1,6 +1,7 @@
 .product-type__list {
-  margin-top: 9px;
-  margin-bottom: 33px;
+  margin-top: 20px;
+  margin-bottom: 32px;
+  // outline: 1px solid yellowgreen;
 }
 
 .product-type__description {
@@ -12,4 +13,22 @@
   line-height: 18px;
   font-weight: 700;
   color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .product-type__wrapper {
+        box-sizing: border-box;
+    display: flex;
+    padding: 50px 50px 30px;
+  }
+  .product-type__description {
+    padding: 23px 0 34px 80px;
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .product-type__list {
+    margin: 0;
+    display: block;
+    width: 501px;
+  }
 }
