@@ -2,17 +2,40 @@
   margin: 0;
   padding: 0;
   border-collapse: collapse;
+  width: 100%;
+}
+
+.specification__about {
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.specification__data-type {
+  border-bottom: 1px solid $grey-white;
 }
 
 .specification__value {
   line-height: 20px;
   vertical-align: top;
-  padding-bottom: 19px;
+  padding-bottom: 9px;
+  padding-top: 10px;
   &--name {
     width: 94px
   }
 }
 
+@media (min-width: $tablet-width) {
+  .specification__about {
+    margin-bottom: 34px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
 
-
-
+@media (min-width: $desktop-width) {
+  .specification__about {
+    margin-bottom: 47px;
+  }
+}

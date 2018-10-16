@@ -2,16 +2,19 @@
   margin: 0;
   padding: 0;
   border: none;
-  border-top: 1px solid $color-light; /*временно из-за Firefox. Позже сделаю через ::after */
 }
 
-.form__set-name {
-  display: block;
+.form__title {
   box-sizing: border-box;
-  min-width: 62px;
-  padding: 0;
-  padding-right: 15px;
+  margin: 0;
   margin-bottom: 9px;
+  display: block;
+  background: $white;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0;
+  flex-shrink: 0;
+
   font-size: 17px;
   line-height: 17px;
   font-weight: 700;
@@ -19,66 +22,36 @@
   color: $color-light1;
 }
 
-.form__user-phone,
-.form__user-mail {
-  box-sizing: border-box;
-  border: none;
-  box-shadow: inset 0px -2px 0 0 $black;
-  padding-top: 12px;
-  padding-right: 43px;
-  padding-bottom: 17px;
-  margin-bottom: 32px;
-  width: 100%;
-  min-width: 260px;
-  font-size: 17px;
-  &::placeholder {
-    font-size: 17px;
-    color: rgba($greyish-dark, 0.3);
-  }
-  &:hover {
-  box-shadow: inset 0px -2px 0 0 $color-light;
-  }
-  &:active {
-  box-shadow: inset 0px -2px 0 0 $color-light;
-  }
+.form__title-name {
+  position: relative;
+  background: $white;
+  padding-right: 20px;
 }
 
-.form__order-about {
-  box-sizing: border-box;
-  border: none;
-  margin-top: 15px;
-  width: 100%;
-  min-width: 260px;
-  padding-top: 12px;
-  padding-right: 17px;
-  padding-bottom: 7px;
-  padding-left: 17px;
-
-  font-size: 17px;
-  border: 2px solid $greyish-dark;
-  background-color: $white;
-  &::placeholder {
-    font-size: 17px;
-    color: rgba($greyish-dark, 0.3);
-  }
-  &:hover {
-  border: 2px solid $color-light;
-  }
-  &:active {
-  border: 2px solid $color-light;
+@media (max-width: $mobile-only-width) {
+  .form__title {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 50%;
+      left: 0;
+      background: $color-light;
+    }
   }
 }
 
 .form__legend {
   display: inline-block;
-  margin-bottom: 30px;
-
+  margin-bottom: 28px;
   font-size: 14px;
 }
 
 .form__button {
   font-size: 17px;
-  line-height: 17px;
+  line-height: 18px;
   font-weight: 700;
   text-transform: uppercase;
   color: $greyish-dark;
@@ -92,5 +65,38 @@
     background-color: $greyish-dark;
     color: rgba($white, 0.3);
     cursor: pointer;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__title {
+    display: block;
+    margin: 0;
+    width: 167px;
+    padding-top: 24px;
+    background-color: transparent;
+  }
+
+  .form__title-name {
+    background-color: transparent;
+  }
+
+  .form__legend {
+    margin: 0;
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 8px;
+  }
+
+  .form__button {
+    width: auto;
+    padding: 14px 30px;
+  }
+
+  .form__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 24px 50px 50px;
   }
 }

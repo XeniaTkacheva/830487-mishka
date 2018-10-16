@@ -1,0 +1,48 @@
+.connect__user-phone,
+.connect__user-mail {
+  box-sizing: border-box;
+  border: none;
+  box-shadow: inset 0px -2px 0 0 $black;
+  padding-top: 12px;
+  padding-right: 43px;
+  padding-bottom: 19px;
+  margin-bottom: 31px;
+  width: 100%;
+  min-width: 260px;
+  font-size: 17px;
+  &::placeholder {
+    font-size: 17px;
+    color: rgba($greyish-dark, 0.3);
+  }
+  &:hover {
+  box-shadow: inset 0px -2px 0 0 $color-light;
+  }
+  &:active {
+  box-shadow: inset 0px -2px 0 0 $color-light;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .connect {
+    background-color: $greyish-white;
+  }
+
+  .connect__wrapper-phone {
+    box-sizing: border-box;
+    display: flex;
+    padding: 44px 50px 18px;
+  }
+
+  .connect__wrapper-mail {
+    box-sizing: border-box;
+    display: flex;
+    padding: 0 50px 50px;
+  }
+
+  .connect__user-phone,
+  .connect__user-mail {
+    margin: 0;
+    margin-top: 8px;
+    background-color: transparent;
+  }
+}

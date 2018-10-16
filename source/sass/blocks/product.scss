@@ -14,25 +14,24 @@
   margin: 0;
   font-size: 25px;
   font-weight: 700;
-  &--lot {
-    font-size: 17px;
-  }
 }
 
-.product__about {
+.product__subtitle {
   margin: 0;
-  margin-bottom: 26px;
+  padding: 0;
+  margin-bottom: 22px;
 
-  font-size: 15px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-light;
+  background-color: $white;
 }
 
 .product__specification {
   margin: 0;
-  margin-bottom: 20px;
-  &--lot {
-    font-size: 13px;
-    line-height: 30px;
-  }
+  margin-bottom: 30px;
 }
 
 .product__picture {
@@ -47,12 +46,109 @@
   font-size: 17px;
   font-weight: 700;
   text-align: center;
-  &--lot {
-    text-align: left;
-    font-size: 15px;
-  }
 }
 
 .product__image {
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .product__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+
+  .product__details {
+    margin-bottom: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .product__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .product__subtitle {
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 24px;
+    width: 80px;
+    text-align: center;
+    line-height: 17px;
+  }
+
+  .product__column {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    width: 50%;
+    padding-right: 44px;
+  }
+
+  .product__picture {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    top: 5px;
+    right: -100%;
+  }
+
+  .product__specification {
+    margin-bottom: 57px;
+}
+
+  .product__price {
+    margin-bottom: 34px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .product__details {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .product__title {
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 20;
+  }
+
+  .product__subtitle {
+    box-sizing: border-box;
+    width: 170px;
+    padding: 17px 38px 0 42px;
+  }
+
+  .product__column {
+    position: static;
+    padding-left: 175px;
+    padding-right: 58px;
+  }
+
+  .product__picture {
+    position: absolute;
+    width: 42%;
+    top: 0;
+    left: 50%;
+  }
+
+  .product__details {
+    z-index: 20;
+    background-color: transparent;
+  }
+
+  .product__specification {
+    margin-bottom: 110px;
+  }
 }

@@ -1,4 +1,7 @@
 .copyright__text {
+  display: block;
+  margin-top: 5px;
+
   font-size: 19px;
   line-height: 19px;
   font-weight: 700;
@@ -6,6 +9,16 @@
   background-color: $greyish-white;
 }
 
+.copyright__link {
+  display: block;
+}
+
 .copyright__logo-path {
   fill: $color-light;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-right: 30px;
+  }
 }

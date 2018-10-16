@@ -8,8 +8,10 @@ $reddish-dark: #231f20;
 $dark: #283645;
 $greyish-dark: #444444;
 
+$grey-under: #e5e5e5;
 $grey-white: #ececec;
 $greyish-white: #f1f1f1;
+$mild-white: #f9f9f9;
 $white: #ffffff;
 
 /*colored   dark-to-light*/
@@ -23,5 +25,6 @@ $color-light: #62d1ba;
 
 /*break-points*/
 
+$mobile-only-width: 767px;
 $tablet-width: 768px;
-$desktop-width: 1200px;
+$desktop-width: 1150px;
