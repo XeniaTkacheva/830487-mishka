@@ -1,24 +1,24 @@
 @font-face {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   src: url("../fonts/opensans.woff") format("woff"),
     url("../fonts/opensans.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   src: url("../fonts/opensansbold.woff") format("woff"),
     url("../fonts/opensansbold.woff2") format("woff2");
-    font-weight: 700;
-    font-style: normal;
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
   margin: 0;
   padding: 0;
 
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
@@ -26,17 +26,20 @@ body {
   background-color: $white;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  -webkit-clip-path: inset(100%);
-      clip-path: inset(100%);
 }
 
 img {

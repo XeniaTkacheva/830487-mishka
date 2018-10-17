@@ -10,9 +10,11 @@
 @mixin black-white-hov60-30 {
   color: $black;
   background-color: $white;
+
   &:hover {
     color: rgba($black, 0.6);
   }
+
   &:active {
     color: rgba($black, 0.3);
   }

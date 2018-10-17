@@ -2,7 +2,7 @@
 .connect__user-mail {
   box-sizing: border-box;
   border: none;
-  box-shadow: inset 0px -2px 0 0 $black;
+  box-shadow: inset 0 -2px 0 0 $black;
   padding-top: 12px;
   padding-right: 43px;
   padding-bottom: 19px;
@@ -10,15 +10,18 @@
   width: 100%;
   min-width: 260px;
   font-size: 17px;
+
   &::placeholder {
     font-size: 17px;
     color: rgba($greyish-dark, 0.3);
   }
+
   &:hover {
-  box-shadow: inset 0px -2px 0 0 $color-light;
+    box-shadow: inset 0 -2px 0 0 $color-light;
   }
+
   &:active {
-  box-shadow: inset 0px -2px 0 0 $color-light;
+    box-shadow: inset 0 -2px 0 0 $color-light;
   }
 }
 

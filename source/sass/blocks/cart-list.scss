@@ -6,7 +6,8 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  box-shadow: 0px 1px 0 0 $grey-white, inset 0px 1px 0 0 $grey-white;
+  box-shadow: 0 1px 0 0 $grey-white, inset 0 1px 0 0 $grey-white;
+
   @include black-white-hov60-30;
 }
 
@@ -19,8 +20,4 @@
     padding: 32px 0 32px 83px;
     box-shadow: none;
   }
-}
-
-@media (min-width: $desktop-width) {
-
 }

@@ -1,6 +1,5 @@
 .handiworks {
-  background: $mild-white;
-  background: url(../img/hero-desktop@1x.jpg) no-repeat top -10px left 50% / auto 74% $mild-white;
+  background: $mild-white url("../img/hero-desktop@1x.jpg") no-repeat top -10px left 50% / auto 74%;
 }
 
 .handiworks__wrapper {
@@ -13,17 +12,18 @@
 
 .handiworks__title {
   margin: 0;
-  padding: 0;
+  padding: 73px 30px 122px 28px;
+
   font-size: 27px;
   line-height: 30px;
   color: $very-dark;
   text-align: center;
-  padding: 73px 30px 122px 28px;
 }
 
 .handiworks__link {
   display: block;
   padding: 25px 160px 30px 30px;
+
   text-align: left;
   text-decoration: none;
   font-size: 19px;
@@ -31,6 +31,7 @@
   font-weight: 700;
   color: $white;
   background-color: $color-light1;
+
   &:hover {
     background-color: $color-light2;
   }
@@ -38,6 +39,7 @@
 
 .handiworks__link--toys {
   background-color: $color-middle1;
+
   &:hover {
     background-color: $color-middle2;
   }
@@ -45,8 +47,7 @@
 
 @media (min-width: $tablet-width) {
   .handiworks {
-    background: $mild-white;
-    background: url(../img/hero-desktop@1x.jpg) no-repeat top left 50% / auto 100% $mild-white;
+    background: $mild-white url("../img/hero-desktop@1x.jpg") no-repeat top left 50% / auto 100%;
   }
 
   .handiworks__wrapper {
@@ -99,8 +100,7 @@
 
   .handiworks__wrapper {
     padding: 0 100px;
-    background: $mild-white;
-    background: url(../img/hero-desktop@1x.jpg) no-repeat top left 50% / auto 100% $mild-white;
+    background: $mild-white url("../img/hero-desktop@1x.jpg") no-repeat top left 50% / auto 100%;
   }
 
   .handiworks__title {
