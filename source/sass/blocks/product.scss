@@ -98,7 +98,7 @@
 
   .product__specification {
     margin-bottom: 57px;
-}
+  }
 
   .product__price {
     margin-bottom: 34px;
@@ -116,6 +116,8 @@
   .product__details {
     font-size: 53px;
     line-height: 57px;
+    z-index: 20;
+    background-color: transparent;
   }
 
   .product__title {
@@ -141,11 +143,6 @@
     width: 42%;
     top: 0;
     left: 50%;
-  }
-
-  .product__details {
-    z-index: 20;
-    background-color: transparent;
   }
 
   .product__specification {

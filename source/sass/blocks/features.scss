@@ -22,9 +22,11 @@
   font-weight: 700;
   color: $black;
   background-color: $white;
+
   &--nature {
-    background:transparent url('../img/icon-feature-flower.svg') left 7px top 30px no-repeat;
+    background: transparent url("../img/icon-feature-flower.svg") left 7px top 30px no-repeat;
   }
+
   &--price {
 
   }
@@ -33,11 +35,13 @@
 @media (min-width: $tablet-width) {
   .features__wrapper {
     padding: 50px 50px 71px;
-}
+  }
+
   .features__title {
     font-size: 43px;
     line-height: 50px;
   }
+
   .features__list {
     display: flex;
     flex-wrap: wrap;
@@ -50,21 +54,27 @@
     font-size: 20px;
     line-height: 22px;
     width: 50%;
+
     &--nature {
-    background:transparent url('../img/icon-feature-flower.svg') left 9px top 47px no-repeat;
+      background: transparent url("../img/icon-feature-flower.svg") left 9px top 47px no-repeat;
     }
+
     &--knit {
       order: 1;
     }
+
     &--price {
       order: 2;
     }
+
     &--help {
       order: 3;
     }
+
     &--like {
       order: 4;
     }
+
     &--gift {
       order: 5;
     }
@@ -75,6 +85,7 @@
   .features__wrapper {
     padding: 59px 100px 80px;
   }
+
   .features__title {
     padding-left: 172px;
     font-size: 53px;

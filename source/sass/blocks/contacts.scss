@@ -55,12 +55,12 @@
 @media (min-width: $tablet-width) {
   .contacts__wrapper-top {
     padding: 60px 50px 27px 50px;
-}
+  }
 
   .contacts__wrapper-btn {
     padding: 49px 50px 58px 50px;
     text-align: center;
-}
+  }
 
   .contacts__title {
     padding-bottom: 47px;
@@ -84,6 +84,7 @@
   .contacts__mail {
     display: inline-block;
     font-size: 17px;
+
     &::after {
       content: "";
       display: block;

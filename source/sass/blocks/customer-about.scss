@@ -26,14 +26,17 @@
   line-height: 18px;
   color: $greyish-dark;
   background-color: $white;
+
   &::placeholder {
     font-size: 17px;
     color: rgba($greyish-dark, 0.3);
   }
+
   &:hover {
     border-bottom: 2px solid $color-light;
   }
-    &:active {
+
+  &:active {
     border-bottom: 2px solid $color-light;
   }
 }

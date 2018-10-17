@@ -1,6 +1,6 @@
 .order-about__text {
   box-sizing: border-box;
-  border: none;
+  border: 2px solid $greyish-dark;
   margin-top: 16px;
   margin-bottom: 5px;
   width: 100%;
@@ -8,22 +8,24 @@
   padding: 12px 17px 12px 17px;
 
   font-size: 17px;
-  border: 2px solid $greyish-dark;
   background-color: $white;
+
   &::placeholder {
     font-size: 17px;
     color: rgba($greyish-dark, 0.3);
   }
+
   &:hover {
     border: 2px solid $color-light;
   }
+
   &:active {
     border: 2px solid $color-light;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .order-about__wrapper{
+  .order-about__wrapper {
     box-sizing: border-box;
     display: flex;
     padding: 50px 50px 30px;
