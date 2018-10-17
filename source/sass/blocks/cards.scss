@@ -1,9 +1,15 @@
+.cards__image {
+  display: block;
+  width: 100%;
+}
+
 .cards__details {
   display: block;
+  margin-bottom: 4px;
 
   text-decoration: none;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 24px;
   font-weight: 700;
   color: $black;
   background-color: $white;
@@ -13,13 +19,7 @@
   margin: 0;
   font-weight: 700;
   font-size: 17px;
-}
-
-.cards__about {
-  margin: 0;
-  margin-bottom: 26px;
-
-  font-size: 15px;
+  line-height: 24px;
 }
 
 .cards__specification {
@@ -30,23 +30,40 @@
   line-height: 30px;
 }
 
-.cards__picture {
-  margin: 0;
-  margin-bottom: 19px;
-}
-
 .cards__price {
-  margin: 0;
-  margin-bottom: 25px;
+  display: block;
+  margin: 0 auto 0 0;
+  padding-top: 5px;
 
   font-weight: 700;
-  text-align: left;
   font-size: 15px;
 }
 
-.cards__image {
+.cards__order {
   display: block;
-  width: 100%;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: red; /*временно*/
+}
+
+.cards__buy {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  padding: 16px 0 17px;
+  min-height: 73px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: $grey-white;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -45,7 +45,7 @@
   .customer-about__wrapper {
     box-sizing: border-box;
     display: flex;
-    padding: 45px 50px 30px;
+    padding: 43px 50px 30px;
   }
 
   .customer-about__list {
@@ -68,5 +68,30 @@
 
   .customer-about__text {
     display: inline-block;
+    padding-bottom: 16px;
+
+    &::placeholder {
+      font-size: 19px;
+      padding-left: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .customer-about__wrapper {
+    padding: 47px 100px 27px;
+  }
+
+  .customer-about__title {
+    padding-left: 11px;
+  }
+
+  .customer-about__list {
+    width: 700px;
+    padding-top: 2px;
+  }
+
+  .customer-about__text {
+    padding-bottom: 17px;
   }
 }

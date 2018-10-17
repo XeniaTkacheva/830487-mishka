@@ -74,7 +74,7 @@
     display: block;
     margin: 0;
     width: 167px;
-    padding-top: 24px;
+    padding-top: 20px;
     background-color: transparent;
   }
 
@@ -99,5 +99,23 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 24px 50px 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__title {
+    width: 125px;
+  }
+
+  .form__title-name {
+    padding: 0;
+  }
+
+  .form__footer {
+    padding: 20px 225px 50px;
+  }
+
+  .form__legend {
+    padding-top: 9px;
   }
 }

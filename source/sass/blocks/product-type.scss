@@ -34,3 +34,14 @@
     width: 501px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-type__wrapper {
+    padding: 50px 100px 30px;
+  }
+
+  .product-typ__title {
+    padding-top: 24px;
+    padding-left: 12px;
+  }
+}

@@ -1,13 +1,14 @@
 .making__wrapper {
   display: block;
-  padding: 30px 30px 33px;
+  padding: 0 30px 60px;
 }
 
 .making__title {
   margin: 0;
   display: block;
-  padding-left: 91px;
-  margin-bottom: 24px;
+  padding: 22px 0 24px 91px;
+  border: 1px solid $grey-white;
+  border-bottom-color: transparent;
 
   font-size: 17px;
   font-weight: 700;
@@ -15,17 +16,26 @@
   background-color: $white;
 }
 
+.making__poster {
+  display: block;
+}
+
+.making_demo {
+  border: 1px solid $grey-white;
+  border-top-color: transparent;
+  padding: 25px 34px 31px;
+}
+
 .making__text {
   margin: 0;
   font-size: 13px;
-  padding: 30px 34px;
+  padding-bottom: 25px;
 }
 
 .making__order {
-  display: inline-block;
-  padding: 20px 26px 16px;
+  display: block;
+  padding: 16px 22px;
   width: auto;
-  margin-left: 34px;
 
   text-decoration: none;
   text-transform: uppercase;
@@ -34,4 +44,18 @@
   font-weight: 700;
   color: $greyish-dark;
   background-color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .making__poster {
+    width: 668px;
+    height: 455px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .making__poster {
+    width: 682px;
+    height: 455px;
+  }
 }

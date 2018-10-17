@@ -48,7 +48,26 @@
     width: 50%;
   }
 
-  .colour__description:nth-child(2n) {
+  .colour__item:nth-child(2n) .colour__description {
     padding-left: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .colour__wrapper {
+    padding: 50px 100px 26px;
+  }
+
+  .colour__item {
+    width: 32%;
+  }
+
+  .colour__item:nth-child(2n) .colour__description {
+    padding-left: 80px;
+  }
+
+  .colour__title {
+    padding-top: 19px;
+    padding-left: 10px;
   }
 }
