@@ -122,11 +122,13 @@
           <section class="making">
             <div class="making__wrapper">
               <h2 class="making__title">Процесс производства</h2>
-              <picture>
-                <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
-                <img class="making__poster" src="img/video-mobile@1x.jpg" alt="Видео Процесс производства" width="260" height="150">
-              </picture>
+              <div class="making__poster">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+                  <img class="making__image" src="img/video-mobile@1x.jpg" alt="Видео Процесс производства" width="260" height="150">
+                </picture>
+              </div>
               <div class="making_demo">
                 <p class="making__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
                 <a class="making__order button" href="#">Сделать заказ</a>
@@ -178,7 +180,7 @@
     <section class="modal-cart">
       <div class="container">
         <div class="modal-cart__wrapper">
-          <h2 class="modal-cart_title">Добавить в корзину</h2>
+          <h2 class="modal-cart__title">Добавить в&nbsp;корзину</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="modal-cart__choice">
               <legend class="modal-cart__field">Выберите размер:</legend>

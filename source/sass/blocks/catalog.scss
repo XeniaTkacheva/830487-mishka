@@ -26,34 +26,42 @@
 @media (min-width: $tablet-width) {
   .catalog__wrapper {
     display: block;
-    padding: 84px 50px 30px;
+    padding: 84px 50px 0;
   }
 
   .catalog__item {
     display: flex;
-    margin-left: 50px;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   .catalog__description {
-    padding: 14px 28px 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px 0;
     width: 50%;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    padding: 131px 50px 0;
+  }
+
   .catalog__list {
     margin-left: -50px;
+    display: flex;
   }
 
   .catalog__item {
     display: block;
-    width: 33%;
+    margin-left: 50px;
     margin-bottom: 57px;
+    width: 33%;
   }
 
   .catalog__description {
+    min-height: 197px;
     width: 100%;
-    padding: 0;
+    padding: 25px 25px 0;
   }
 }
