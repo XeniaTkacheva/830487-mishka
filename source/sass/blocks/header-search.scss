@@ -22,6 +22,8 @@
   .header-search {
     width: 80px;
     margin-left: auto;
+    border-left: 1px solid $grey-white;
+    border-right: 1px solid $grey-white;
   }
 
   .header-search__link {

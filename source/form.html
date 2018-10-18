@@ -24,7 +24,7 @@
               <span class="visually-hidden">Открыть меню</span>
             </button>
             <ul class="main-nav__list site-list default-list">
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--first">
                 <a class="site-list__link" href="catalog.html">Каталог товаров</a>
               </li>
               <li class="site-list__item">
@@ -110,7 +110,6 @@
               </fieldset>
               <fieldset class="form__set customer-about">
                 <div class="customer-about__wrapper">
-                  <!-- <legend class="form__set-name">ФИО</legend> -->
                   <h3 class="form__title customer-about__title"><span class="form__title-name">ФИО</span></h3>
                   <ul class="customer-about__list default-list">
                     <li class="customer-about__item">
@@ -130,19 +129,19 @@
               </fieldset>
               <fieldset class="form__set connect">
                 <div class="connect__wrapper-phone">
-                  <h3 class="form__title"><span class="form__title-name">тел</span></h3>
+                  <h3 class="form__title connect__title-phone"><span class="form__title-name">тел</span></h3>
                   <label class="visually-hidden" for="user-phone">Введите ваш телефон</label>
                   <input  class="connect__user-phone" type="tel" name="user-phone" id="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                 </div>
                 <div class="connect__wrapper-mail">
-                  <h3 class="form__title"><span class="form__title-name">E-mail</span></h3>
+                  <h3 class="form__title connect__title-mail"><span class="form__title-name">E-mail</span></h3>
                   <label class="visually-hidden" for="user-mail">Ваш адрес электронной почты</label>
                   <input type="email" class="connect__user-mail" name="user-mail" id="user-mail" placeholder="Ваш Email*" required>
                 </div>
               </fieldset>
               <fieldset class="form__set order-about">
                 <div class="order-about__wrapper">
-                  <h3 class="form__title"><span class="form__title-name">Доп</span></h3>
+                  <h3 class="form__title order-about__title"><span class="form__title-name">Доп</span></h3>
                   <label class="visually-hidden" for="order-about">Ваши пожелания к заказу</label>
                   <textarea class="order-about__text" name="order-about" id="order-about" rows="6" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </div>
@@ -162,7 +161,7 @@
     </main>
     <footer class="page-footer">
       <div class="container">
-        <div class="page-footer__wrapper">
+        <div class="page-footer__wrapper page-footer__wrapper--inner">
           <a class="page-footer__logo" href="index.html">
             <img src="img/logo-footer.svg" alt="Логотип магазина &laquo;Мишка&raquo;" class="page-footer__logo-image" width="86" height="35">
           </a>

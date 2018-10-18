@@ -47,5 +47,37 @@
     margin: 0;
     margin-top: 8px;
     background-color: transparent;
+
+    &::placeholder {
+      font-size: 19px;
+      padding-left: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .connect__wrapper-phone {
+    padding: 44px 100px 18px;
+  }
+
+  .connect__wrapper-mail {
+    padding: 0 100px 50px;
+  }
+
+  .connect__title-phone {
+    box-sizing: border-box;
+    padding-top: 22px;
+    padding-left: 13px;
+  }
+
+  .connect__title-mail {
+    box-sizing: border-box;
+    padding-top: 24px;
+    padding-left: 12px;
+  }
+
+  .connect__user-phone,
+  .connect__user-mail {
+    width: 700px;
   }
 }

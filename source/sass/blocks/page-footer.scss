@@ -32,7 +32,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    padding: 50px 50px 55px;
+    padding: 50px 50px 45px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -68,6 +68,11 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    padding: 50px 100px 55px;
+    padding: 50px 100px 45px;
+
+    &--inner {
+      margin: 0 50px;
+      padding: 50px 50px 45px;
+    }
   }
 }
