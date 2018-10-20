@@ -3,6 +3,7 @@
 }
 
 .page-main__title {
+  position: relative;
   margin: 0;
   padding: 72px 30px 76px;
   display: block;
@@ -28,10 +29,27 @@
   }
 
   .page-main__title {
+    position: relative;
     font-size: 43px;
     line-height: 50px;
     color: $black;
-    padding-top: 52px;
+    padding-top: 54px;
+    padding-bottom: 82px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 768px;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: 0 0;
+      background-size: 768px 24px;
+      background-repeat: repeat-x;
+      z-index: 20;
+    }
   }
 }
 
@@ -44,5 +62,14 @@
     font-size: 53px;
     line-height: 57px;
     padding-bottom: 100px;
+
+    &::after {
+      bottom: -19px;
+      left: 0;
+      width: 1150px;
+      height: 34px;
+      background-position: 0 0;
+      background-size: 1150px 34px;
+    }
   }
 }

@@ -5,6 +5,8 @@
 
 .product-type__description {
   display: block;
+  box-sizing: border-box;
+  position: relative;
   padding-top: 15px;
   padding-bottom: 10px;
   padding-left: 62px;
@@ -13,6 +15,19 @@
   line-height: 18px;
   font-weight: 700;
   color: $black;
+
+  &::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    border: 2px solid $greyish-dark;
+    border-radius: 50%;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -26,6 +41,13 @@
     padding: 23px 0 34px 80px;
     font-size: 19px;
     line-height: 19px;
+
+    &::before {
+      top: 5px;
+      left: 0;
+      width: 52px;
+      height: 52px;
+    }
   }
 
   .product-type__list {

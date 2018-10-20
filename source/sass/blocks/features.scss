@@ -1,6 +1,6 @@
 .features__wrapper {
   display: block;
-  padding: 27px 30px 26px;
+  padding: 28px 30px 26px;
 }
 
 .features__title {
@@ -16,6 +16,7 @@
 
 .features__item {
   padding-top: 83px;
+  position: relative;
 
   font-size: 17px;
   line-height: 20px;
@@ -23,17 +24,88 @@
   color: $black;
   background-color: $white;
 
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    background-repeat: no-repeat;
+  }
+
   &--nature {
-    background: transparent url("../img/icon-feature-flower.svg") left 7px top 30px no-repeat;
+    &::before {
+      left: 8px;
+      top: 30px;
+      width: 32px;
+      height: 37px;
+      background-image: url("../img/icon-feature-flower.svg");
+      background-size: 32px 37px;
+    }
+  }
+
+  &--price {
+    &::before {
+      left: 0;
+      top: 31px;
+      width: 47px;
+      height: 27px;
+      background-image: url("../img/icon-feature-money.svg");
+      background-size: 47px 27px;
+    }
+  }
+
+  &--like {
+    &::before {
+      left: 7px;
+      top: 35px;
+      width: 33px;
+      height: 28px;
+      background-image: url("../img/icon-feature-heart.svg");
+      background-size: 33px 28px;
+    }
+  }
+
+  &--knit {
+    &::before {
+      left: 3px;
+      top: 32px;
+      width: 35px;
+      height: 35px;
+      background-image: url("../img/icon-feature-ball.svg");
+      background-size: 35px 35px;
+    }
+  }
+
+  &--help {
+    &::before {
+      left: -5px;
+      top: 33px;
+      width: 54px;
+      height: 23px;
+      background-image: url("../img/icon-feature-rocket.svg");
+      background-size: 54px 23px;
+    }
+  }
+
+  &--gift {
+    &::before {
+      left: 3px;
+      top: 30px;
+      width: 33px;
+      height: 33px;
+      background-image: url("../img/icon-feature-gift.svg");
+      background-size: 33px 33px;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .features__wrapper {
-    padding: 50px 50px 71px;
+    padding: 50px 53px 71px;
   }
 
   .features__title {
+    margin-left: -8px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -52,27 +124,55 @@
     width: 50%;
 
     &--nature {
-      background: transparent url("../img/icon-feature-flower.svg") left 9px top 47px no-repeat;
+      &::before {
+        left: 8px;
+        top: 47px;
+      }
     }
 
     &--knit {
       order: 1;
+
+      &::before {
+        left: 3px;
+        top: 50px;
+      }
     }
 
     &--price {
       order: 2;
+
+      &::before {
+        left: -2;
+        top: 47px;
+      }
     }
 
     &--help {
       order: 3;
+
+      &::before {
+        left: -6px;
+        top: 50px;
+      }
     }
 
     &--like {
       order: 4;
+
+      &::before {
+        left: 7px;
+        top: 51px;
+      }
     }
 
     &--gift {
       order: 5;
+
+      &::before {
+        left: 3px;
+        top: 47px;
+      }
     }
   }
 }
@@ -83,6 +183,7 @@
   }
 
   .features__title {
+    margin-left: -3px;
     padding-left: 172px;
     font-size: 53px;
     line-height: 57px;
@@ -94,6 +195,6 @@
 
   .features__item {
     width: 350px;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
   }
 }

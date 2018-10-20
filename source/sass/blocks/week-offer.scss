@@ -3,7 +3,10 @@
     content: "";
     display: block;
     box-sizing: border-box;
-    background: url("../../img/bg-zigzag-line.svg") repeat-x $color-dark;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 136px 0;
+    background-size: 320px 6px;
     height: 6px;
   }
 }
@@ -25,6 +28,8 @@
 @media (min-width: $tablet-width) {
   .week-offer {
     &::after {
+      background-size: 773px 15px;
+      background-position: 132px 0;
       height: 15px;
     }
   }
@@ -37,8 +42,10 @@
 @media (min-width: $desktop-width) {
   .week-offer {
     &::after {
+      background-size: 1050px 23px;
+      background-position: 130px 0;
       height: 23px;
-      margin: 76px 100px 0;
+      margin: 73px 100px 0;
     }
   }
 
