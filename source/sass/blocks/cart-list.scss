@@ -1,5 +1,6 @@
 .cart-list__link {
   display: block;
+  position: relative;
   padding: 29px 30px 26px 76px;
 
   text-decoration: none;
@@ -9,6 +10,24 @@
   box-shadow: 0 1px 0 0 $grey-white, inset 0 1px 0 0 $grey-white;
 
   @include black-white-hov60-30;
+}
+
+.cart-list__icon {
+  position: absolute;
+  top: 39%;
+  left: 30px;
+  opacity: 0.2;
+  fill: $reddish-dark;
+
+  &:hover {
+    opacity: 1;
+    fill: $color-light1;
+  }
+
+  &:active {
+    opacity: 0.3;
+    fill: $color-light1;
+  }
 }
 
 @media (min-width: $tablet-width) {

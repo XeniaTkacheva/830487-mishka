@@ -64,6 +64,10 @@ img {
   // outline: 1px solid blue; /*временно*/
 }
 
+.svg-sprite {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .container {
     width: 768px; /*временно*/

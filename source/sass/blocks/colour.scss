@@ -15,6 +15,20 @@
   line-height: 18px;
   font-weight: 700;
   color: $black;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: $color-light;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: rgba($greyish-dark, 0.3);
+    }
+  }
 
   &::before {
     content: "";
@@ -28,6 +42,19 @@
     border: 2px solid $greyish-dark;
   }
 }
+
+.colour__checkbox:checked + .colour__description::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 9px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/icon-tick-mobile.svg");
+  background-repeat: no-repeat;
+}
+
 
 @media (min-width: $tablet-width) {
   .colour {
@@ -64,12 +91,20 @@
     }
   }
 
+  .colour__checkbox:checked + .colour__description::after {
+    top: 17px;
+    left: 11px;
+    width: 33px;
+    height: 22px;
+    background-image: url("../img/icon-tick.svg");
+  }
+
   .colour__item {
     width: 50%;
   }
 
   .colour__item:nth-child(2n) .colour__description {
-    padding-left: 90px;
+    margin-left: 10px;
   }
 }
 
@@ -83,7 +118,7 @@
   }
 
   .colour__item:nth-child(2n) .colour__description {
-    padding-left: 80px;
+    margin-left: 0;
   }
 
   .colour__title {

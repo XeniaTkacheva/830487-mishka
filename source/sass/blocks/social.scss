@@ -14,6 +14,34 @@
   }
 }
 
+.social__link-image {
+  fill: $reddish-dark;
+
+  &:hover {
+    fill: $color-middle2;
+  }
+
+  &:active {
+    fill: $color-middle2;
+    opacity: 0.3;
+  }
+
+  &--ig {
+    width: 22px;
+    height: 21px;
+  }
+
+  &--fb {
+    width: 15px;
+    height: 28px;
+  }
+
+  &--tw {
+    width: 20px;
+    height: 24px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .social__list {
     padding: 0;

@@ -71,9 +71,10 @@
   box-sizing: border-box;
   display: inline-block;
   max-width: 130px;
-  border: 1px solid $grey-white; /*временно*/
+  border: 1px solid $grey-white;
   margin-bottom: 37px;
   text-align: center;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -92,11 +93,35 @@
     &::before {
       background-image: url("../img/huge-arrow-left-svg.svg");
     }
+
+    &:hover {
+      &::before {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      &::before {
+        opacity: 0.3;
+      }
+    }
   }
 
   &--next {
     &::before {
       background-image: url("../img/huge-arrow-right-svg.svg");
+    }
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
     }
   }
 }
@@ -160,6 +185,7 @@
   .reviews__btn {
     width: 50%;
     margin: 0;
+    border: none;
   }
 
   .reviews__write {
