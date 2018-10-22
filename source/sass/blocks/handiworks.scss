@@ -26,6 +26,7 @@
 
 .handiworks__link {
   display: block;
+  position: relative;
   padding: 25px 160px 30px 30px;
 
   text-align: left;
@@ -39,18 +40,44 @@
   &:hover {
     background-color: $color-light2;
   }
-}
 
-.handiworks__link--toys {
-  background-color: $color-middle1;
+  &--interior {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 63px;
+      top: 24px;
+      right: 36px;
+      background: url("../img/icon-interior.svg") no-repeat;
+      opacity: 0.5;
+    }
+  }
 
-  &:hover {
-    background-color: $color-middle2;
+  &--toys {
+    background-color: $color-middle1;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 60px;
+      top: 22px;
+      right: 27px;
+      background: url("../img/icon-toy.svg") no-repeat;
+      opacity: 0.5;
+    }
+
+    &:hover {
+      background-color: $color-middle2;
+    }
   }
 }
 
+
 @media (min-width: $tablet-width) {
   .handiworks {
+    position: relative;
     background: $mild-white url("../img/hero-tablet@1x.jpg") no-repeat top left 50% / auto 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -64,6 +91,21 @@
     justify-content: space-between;
     min-height: 746px;
     padding: 0 50px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 768px;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: 0 0;
+      background-size: 768px 24px;
+      background-repeat: repeat-x;
+      z-index: 20;
+    }
   }
 
   .handiworks__delivery {
@@ -98,6 +140,20 @@
 
     font-size: 20px;
     line-height: 30px;
+
+    &--interior {
+      &::after {
+        top: 29px;
+        right: 37px;
+      }
+    }
+
+    &--toys {
+      &::after {
+        top: 30px;
+        right: 34px;
+      }
+    }
   }
 }
 
@@ -112,6 +168,15 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: $mild-white url("../img/hero-desktop@2x.jpg") no-repeat top left 50% / auto 100%;
+    }
+
+    &::after {
+      bottom: -14px;
+      left: 0;
+      width: 1250px;
+      height: 34px;
+      background-size: 1250px 34px;
+      margin-top: -12px;
     }
   }
 

@@ -2,8 +2,10 @@
   &::after {
     content: "";
     display: block;
-    background: url("../../img/bg-zigzag-line.svg") repeat-x $color-dark;
-    width: 100%;
+    background: url("../../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 136px 0;
+    background-size: 320px 6px;
     height: 6px;
   }
 }
@@ -52,24 +54,75 @@
 }
 
 .reviews__author-contacts {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   font-size: 17px;
   line-height: 30px;
   font-style: normal;
 }
 
+.reviews__buttons {
+  display: block;
+  text-align: center;
+}
+
 .reviews__btn {
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 13px 10px 10px;
   box-sizing: border-box;
   display: inline-block;
   max-width: 130px;
-  border: 1px solid $grey-white; /*временно*/
+  border: 1px solid $grey-white;
   margin-bottom: 37px;
+  text-align: center;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 26px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 
   &--prev {
     border-right: none;
+
+    &::before {
+      background-image: url("../img/huge-arrow-left-svg.svg");
+    }
+
+    &:hover {
+      &::before {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      &::before {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &--next {
+    &::before {
+      background-image: url("../img/huge-arrow-right-svg.svg");
+    }
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -85,7 +138,9 @@
 @media (min-width: $tablet-width) {
   .reviews {
     &::after {
-      margin-top: 70px;
+      margin-top: 67px;
+      background-size: 773px 15px;
+      background-position: 132px 0;
       height: 15px;
     }
   }
@@ -122,7 +177,7 @@
   .reviews__buttons {
     display: flex;
     position: absolute;
-    width: 167px;
+    width: 175px;
     bottom: 50px;
     right: 50px;
   }
@@ -130,6 +185,7 @@
   .reviews__btn {
     width: 50%;
     margin: 0;
+    border: none;
   }
 
   .reviews__write {
@@ -170,8 +226,7 @@
   }
 
   .reviews__buttons {
-    width: 175px;
-    bottom: 100px;
+    bottom: 97px;
     right: 0;
   }
 
@@ -184,8 +239,9 @@
       box-sizing: border-box;
       margin-right: 100px;
       margin-left: 100px;
+      background-size: 1050px 23px;
+      background-position: 130px 0;
       height: 23px;
-      max-width: 1050px;
     }
   }
 }

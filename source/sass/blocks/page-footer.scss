@@ -3,6 +3,7 @@
   padding: 0 30px;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .page-footer__social {
@@ -47,6 +48,16 @@
   .page-footer__logo-image {
     width: 102px;
     height: 34px;
+    fill: $reddish-dark;
+
+    &:hover {
+      fill: $color-middle2;
+    }
+
+    &:active {
+      opacity: 0.3;
+      fill: $color-middle2;
+    }
   }
 
   .page-footer__social {

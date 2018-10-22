@@ -7,14 +7,27 @@
   font-weight: 700;
   color: $black;
   background-color: $greyish-white;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__link {
   display: block;
 }
 
-.copyright__logo-path {
-  fill: $color-light;
+.copyright__logo {
+  fill: $color-light1;
+
+  &:hover {
+    fill: $color-middle2;
+  }
+
+  &:active {
+    fill: $color-middle2;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
