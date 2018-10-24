@@ -58,10 +58,8 @@ img {
   position: relative;
   box-sizing: border-box;
   min-width: 320px;
-  max-width: 768px; /*временно*/
-  width: 320px; /*временно*/
+  max-width: 1250px;
   margin: 0 auto;
-  // outline: 1px solid blue; /*временно*/
 }
 
 .svg-sprite {
@@ -70,14 +68,12 @@ img {
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 768px; /*временно*/
     // outline: 1px solid red; /*временно*/
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1250px;
     max-width: 1250px;
     margin: 0 auto;
     // outline: 1px solid yellow; /*временно*/

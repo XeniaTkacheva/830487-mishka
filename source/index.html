@@ -166,6 +166,33 @@
                 <a href="#" class="week-offer__order button" title="Закажите в одно касание">Заказать</a>
               </div>
             </div>
+              <section class="modal-cart">
+                <div class="container">
+                  <div class="modal-cart__wrapper">
+                    <h2 class="modal-cart__title">Добавить в&nbsp;корзину</h2>
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                      <fieldset class="modal-cart__choice">
+                        <h3 class="modal-cart__fields">Выберите размер:</h3>
+                        <ul class="modal-cart__list default-list">
+                          <li class="modal-cart__item">
+                            <input class="modal-cart__size-value visually-hidden" type="radio" name="size" id="size-s" value="size-s" checked>
+                            <label class="modal-cart__size" for="size-s">S</label>
+                          </li>
+                          <li class="modal-cart__item">
+                            <input class="modal-cart__size-value visually-hidden" type="radio" name="size" id="size-m" value="size-m">
+                            <label class="modal-cart__size" for="size-m">M</label>
+                          </li>
+                          <li class="modal-cart__item">
+                            <input class="modal-cart__size-value visually-hidden" type="radio" name="size" id="size-l" value="size-l">
+                            <label class="modal-cart__size" for="size-l">L</label>
+                          </li>
+                        </ul>
+                      </fieldset>
+                      <button class="modal-cart__button button" type="submit">Добавить</button>
+                    </form>
+                  </div>
+                </div>
+              </section>
           </div>
         </section>
         <section class="features">
@@ -291,33 +318,7 @@
         </div>
       </div>
     </footer>
-    <section class="modal-cart">
-      <div class="container">
-        <div class="modal-cart__wrapper">
-          <h2 class="modal-cart__title">Добавить в&nbsp;корзину</h2>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="modal-cart__choice">
-              <h3 class="modal-cart__fields">Выберите размер:</h3>
-              <ul class="modal-cart__list default-list">
-                <li class="modal-cart__item">
-                  <input class="modal-cart__size-value visually-hidden" type="radio" name="size" id="size-s" value="size-s" checked>
-                  <label class="modal-cart__size" for="size-s">S</label>
-                </li>
-                <li class="modal-cart__item">
-                  <input class="modal-cart__size-value visually-hidden" type="radio" name="size" id="size-m" value="size-m">
-                  <label class="modal-cart__size" for="size-m">M</label>
-                </li>
-                <li class="modal-cart__item">
-                  <input class="modal-cart__size-value visually-hidden" type="radio" name="size" id="size-l" value="size-l">
-                  <label class="modal-cart__size" for="size-l">L</label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="modal-cart__button button" type="submit">Добавить</button>
-          </form>
-        </div>
-      </div>
-    </section>
+
     <script src="js/picturefill.min.js" async></script>
     <script src="js/main.js"></script>
   </body>
