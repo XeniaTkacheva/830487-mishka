@@ -1,4 +1,12 @@
-.week-offer {
+.week-offer__wrapper {
+  box-sizing: border-box;
+  min-width: 320px;
+  max-width: 1250px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  padding: 27px 30px 0;
+
   &::after {
     content: "";
     display: block;
@@ -8,13 +16,8 @@
     background-position: 136px 0;
     background-size: 320px 6px;
     height: 6px;
+    margin: 0 0 36px;
   }
-}
-
-.week-offer__wrapper {
-  display: block;
-  position: relative;
-  padding: 27px 30px 36px;
 }
 
 .week-offer__order {
@@ -27,32 +30,29 @@
 }
 
 @media (min-width: $tablet-width) {
-  .week-offer {
+  .week-offer__wrapper {
+    padding: 43px 50px 0;
+
     &::after {
       background-size: 773px 15px;
       background-position: 132px 0;
       height: 15px;
+      margin: 53px -50px 0;
     }
-  }
-
-  .week-offer__wrapper {
-    padding: 43px 50px 53px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .week-offer {
-    &::after {
-      background-size: 1050px 23px;
-      background-position: 130px 0;
-      height: 23px;
-      margin: 73px 100px 0;
-    }
-  }
-
   .week-offer__wrapper {
     position: relative;
     margin-top: 69px;
     padding: 52px 100px 0;
+
+    &::after {
+      background-size: 1050px 23px;
+      background-position: 130px 0;
+      height: 23px;
+      margin: 73px 0 0;
+    }
   }
 }

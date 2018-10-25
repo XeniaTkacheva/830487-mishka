@@ -1,3 +1,7 @@
+.contacts__wrapper {
+  min-width: 320px;
+}
+
 .contacts__wrapper-top {
   display: block;
   padding: 33px 30px 9px 28px;
@@ -5,7 +9,7 @@
 
 .contacts__wrapper-btn {
   display: block;
-  padding: 34px 30px 40px 30px;
+  padding: 32px 30px 40px 30px;
 }
 
 .contacts__list {
@@ -48,6 +52,7 @@
 
 .contacts__map {
   margin: 0 auto;
+  text-align: center;
 }
 
 .contacts__map-image {
@@ -130,7 +135,8 @@
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
-    margin: 70px 100px 105px;
+    max-width: 1050px;
+    margin: 70px auto 105px;
   }
 
   .contacts__wrapper-top {
@@ -173,10 +179,11 @@
     display: block;
     position: absolute;
     top: 0;
-    right: -100%;
+    right: -525px;
   }
 
   .contacts__map-image {
     width: 525px;
+    height: 457px;
   }
 }

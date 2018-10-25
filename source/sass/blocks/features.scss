@@ -1,4 +1,8 @@
 .features__wrapper {
+  box-sizing: border-box;
+  min-width: 320px;
+  max-width: 1250px;
+  margin: 0 auto;
   display: block;
   padding: 28px 30px 26px;
 }
@@ -17,6 +21,7 @@
 .features__item {
   padding-top: 83px;
   position: relative;
+  min-height: 40px;
 
   font-size: 17px;
   line-height: 20px;
@@ -118,10 +123,11 @@
   .features__item {
     padding-top: 100px;
     margin-bottom: 12px;
+    min-height: 44px;
+    width: 50%;
 
     font-size: 20px;
     line-height: 22px;
-    width: 50%;
 
     &--nature {
       &::before {

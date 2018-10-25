@@ -1,4 +1,11 @@
-.reviews {
+.reviews__wrapper {
+  box-sizing: border-box;
+  min-width: 320px;
+  max-width: 1050px;
+  margin: 0 auto;
+  display: block;
+  padding: 30px 30px 45px;
+
   &::after {
     content: "";
     display: block;
@@ -8,11 +15,6 @@
     background-size: 320px 6px;
     height: 6px;
   }
-}
-
-.reviews__wrapper {
-  display: block;
-  padding: 30px 30px 45px;
 }
 
 .reviews__title {
@@ -136,25 +138,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .reviews {
-    &::after {
-      margin-top: 67px;
-      background-size: 773px 15px;
-      background-position: 132px 0;
-      height: 15px;
-    }
-  }
-
-  .reviews__title {
-    padding-bottom: 48px;
-    font-size: 43px;
-    line-height: 50px;
-  }
-
   .reviews__wrapper {
     position: relative;
     display: block;
-    padding: 77px 50px 50px 45px;
+    padding: 77px 50px 0 45px;
     background: $white url("../img/review@1x.jpg") no-repeat top left;
     // background-size: 350px 457px;
     background-size: auto 100%;
@@ -163,6 +150,19 @@
       background: url("../img/review@2x.jpg") no-repeat top left;
       background-size: 350px auto;
     }
+
+    &::after {
+      margin: 117px -50px 0;
+      background-size: 773px 15px;
+      background-position: 100px 0;
+      height: 15px;
+    }
+  }
+
+  .reviews__title {
+    padding-bottom: 48px;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .reviews__text {
@@ -178,7 +178,7 @@
     display: flex;
     position: absolute;
     width: 175px;
-    bottom: 50px;
+    bottom: 133px;
     right: 50px;
   }
 
@@ -204,15 +204,22 @@
   .reviews__wrapper {
     position: relative;
     display: block;
-    margin: 0 100px;
-    padding: 70px 90px 95px 170px;
+    margin: 0 auto;
+    padding: 70px 90px 0 170px;
     background: url("../img/review@1x.jpg") no-repeat top left $white;
-    // background-size: 350px 457px;
-    background-size: auto 100%;
+    background-size: 350px 457px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/review@2x.jpg") no-repeat top left $white;
-      background-size: 350px 100%;
+      background-size: 350px 457px;
+    }
+
+    &::after {
+      box-sizing: border-box;
+      margin: 162px -90px 0 -170px;
+      background-size: 1050px 23px;
+      background-position: 130px 0;
+      height: 23px;
     }
   }
 
@@ -226,22 +233,11 @@
   }
 
   .reviews__buttons {
-    bottom: 97px;
+    bottom: 189px;
     right: 0;
   }
 
   .reviews__text {
     margin-bottom: 41px;
-  }
-
-  .reviews {
-    &::after {
-      box-sizing: border-box;
-      margin-right: 100px;
-      margin-left: 100px;
-      background-size: 1050px 23px;
-      background-position: 130px 0;
-      height: 23px;
-    }
   }
 }

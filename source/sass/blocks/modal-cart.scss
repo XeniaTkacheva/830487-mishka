@@ -16,7 +16,7 @@
   box-sizing: border-box;
   border: 1px solid $grey-border;
   box-shadow: 0 5px 10px 0 rgba($very-dark1, 0.25);
-  max-width: 566px;
+  width: 320px;
   padding: 30px 29px 46px;
 }
 
@@ -105,6 +105,7 @@
   }
 
   .modal-cart__wrapper {
+    width: 566px;
     padding: 33px 107px 46px;
     margin: 0 auto;
   }
