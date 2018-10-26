@@ -69,6 +69,7 @@
 }
 
 .reviews__btn {
+  width: 100%;
   padding: 13px 10px 10px;
   box-sizing: border-box;
   display: inline-block;
@@ -77,6 +78,7 @@
   margin-bottom: 37px;
   text-align: center;
   cursor: pointer;
+  background-color: transparent;
 
   &::before {
     content: "";
@@ -143,12 +145,11 @@
     display: block;
     padding: 77px 50px 0 45px;
     background: $white url("../img/review@1x.jpg") no-repeat top left;
-    // background-size: 350px 457px;
-    background-size: auto 100%;
+    background-size: 350px 457px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/review@2x.jpg") no-repeat top left;
-      background-size: 350px auto;
+      background-size: 350px 457px;
     }
 
     &::after {
@@ -166,6 +167,7 @@
   }
 
   .reviews__text {
+    min-height: 120px;
     margin-bottom: 57px;
     font-size: 17px;
   }

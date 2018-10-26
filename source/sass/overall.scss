@@ -68,6 +68,21 @@ img {
   display: none;
 }
 
+.modal-overlay {
+  display: none;
+  background-color: rgba($white, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 25;
+
+  &--show {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .container {
     // outline: 1px solid red; /*временно*/

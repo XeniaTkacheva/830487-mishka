@@ -8,4 +8,14 @@
   background: transparent;
 
   text-align: center;
+
+  &:hover {
+    color: $white;
+    background-color: $greyish-dark;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $greyish-dark;
+  }
 }
