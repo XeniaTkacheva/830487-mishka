@@ -1,6 +1,5 @@
 .product-type__wrapper {
   min-width: 320px;
-  max-width: 1150px;
   padding: 0 30px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -95,13 +94,14 @@
   .product-type__list {
     margin: 0;
     display: block;
-    width: 501px;
+    // width: 501px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-type__wrapper {
     padding: 50px 100px 30px;
+    max-width: 1150px;
   }
 
   .product-typ__title {

@@ -63,14 +63,15 @@
   left: 80px;
   width: 101px;
   height: 77px;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.2);
   }
 
   &:active {
-    transform: scale(0.8);
     opacity: 0.3;
+    transform: scale(0.8);
   }
 }
 

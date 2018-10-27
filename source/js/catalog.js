@@ -1,12 +1,14 @@
-var link = document.querySelector(".week-offer__order");
+var cart = document.querySelectorAll(".cards__order");
 var overlay = document.querySelector(".modal-overlay");
 var popup = document.querySelector(".modal-cart");
 
-link.addEventListener("click", function (evt) {
-  evt.preventDefault();
-    popup.classList.add("modal-cart--show");
-    overlay.classList.add("modal-overlay--show");
-});
+for (var i = 0; i < cart.length; i++){
+    cart[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-cart--show");
+      overlay.classList.add("modal-overlay--show");
+    });
+  };
 
 window.addEventListener("keydown", function (evt) {
 if (evt.keyCode === 27) {
