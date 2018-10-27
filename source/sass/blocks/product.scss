@@ -37,6 +37,7 @@
 .product__picture {
   margin: 0;
   margin-bottom: 19px;
+  text-align: center;
 }
 
 .product__price {
@@ -49,7 +50,9 @@
 }
 
 .product__image {
-  width: 100%;
+  width: 260px;
+  height: 315px;
+  // width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -94,6 +97,12 @@
     width: 100%;
     top: 5px;
     right: -100%;
+  }
+
+  .product__image {
+    width: 333px;
+    height: 404px;
+    // width: 100%;
   }
 
   .product__specification {
@@ -143,6 +152,11 @@
     width: 42%;
     top: 0;
     left: 50%;
+  }
+
+  .product__image {
+    width: 525px;
+    height: 636px;
   }
 
   .product__specification {

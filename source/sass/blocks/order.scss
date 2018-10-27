@@ -1,3 +1,10 @@
+.order__wrapper-top {
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1150px;
+}
+
 .order__text {
   margin: 0;
   padding: 22px 30px 0;
@@ -10,7 +17,7 @@
 .order__form {
   display: block;
   box-sizing: border-box;
-  padding: 22px 30px 55px;
+  padding: 22px 0 55px;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,7 +33,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .order__wrapper-top {
+    padding: 0 50px;
+  }
+
   .order__text {
-    padding: 123px 225px 0;
+    padding: 123px 175px 0;
   }
 }

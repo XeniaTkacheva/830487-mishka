@@ -14,8 +14,8 @@
 
 .header-search__icon {
   position: absolute;
-  top: 40%;
-  left: 32px;
+  top: 36px;
+  left: 30px;
   opacity: 0.2;
   fill: $reddish-dark;
 
@@ -42,6 +42,7 @@
     padding: 32px 32px;
     font-size: 0;
     box-shadow: none;
+    background-color: transparent;
   }
 }
 

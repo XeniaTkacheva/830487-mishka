@@ -1,6 +1,15 @@
 .making__wrapper {
   display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  min-width: 320px;
+  max-width: 1150px;
   padding: 0 30px 60px;
+}
+
+.making__column {
+  box-sizing: border-box;
+  border: 1px solid $grey-white;
 }
 
 .making__title {
@@ -8,7 +17,6 @@
   margin: 0;
   display: block;
   padding: 22px 0 24px 91px;
-  border: 1px solid $grey-white;
   border-bottom-color: transparent;
 
   font-size: 17px;
@@ -32,19 +40,15 @@
 
 .making__poster {
   position: relative;
+  width: 260px;
+  height: 150px;
 
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 101px;
-    height: 77px;
-    background-image: url("../img/icon-play.svg");
-    background-repeat: no-repeat;
-    background-size: 101px 77px;
-    transform: translate(-50px, -39px);
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba($black, 0.1);
   }
 }
 
@@ -52,8 +56,26 @@
   display: block;
 }
 
-.making_demo {
-  border: 1px solid $grey-white;
+.making__play {
+  display: block;
+  position: absolute;
+  top: 37px;
+  left: 80px;
+  width: 101px;
+  height: 77px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+}
+
+.making__demo {
   border-top-color: transparent;
   padding: 25px 34px 31px;
 }
@@ -80,18 +102,28 @@
 
 @media (min-width: $tablet-width) {
   .making__wrapper {
+    padding: 0 50px 64px;
+  }
+
+  .making__column {
     display: flex;
     flex-direction: column;
-    padding: 0 50px 64px;
   }
 
   .making__poster {
     order: -1;
+    width: 668px;
+    height: 455px;
   }
 
   .making__image {
     width: 668px;
     height: 455px;
+  }
+
+  .making__play {
+    top: 189px;
+    left: 283px;
   }
 
   .making__title {
@@ -105,7 +137,7 @@
     }
   }
 
-  .making_demo {
+  .making__demo {
     padding: 5px 40px 45px;
   }
 
@@ -120,9 +152,13 @@
 @media (min-width: $desktop-width) {
   .making__wrapper {
     display: block;
+    padding: 0 50px 105px 0;
+  }
+
+  .making__column {
     position: relative;
     margin-left: 732px;
-    padding: 0 50px 105px 0;
+    width: 368px;
   }
 
   .making__poster {
@@ -130,13 +166,18 @@
     order: 0;
     position: absolute;
     top: 0;
-    left: -163%;
+    left: -682px;
     width: 682px;
   }
 
   .making__image {
     width: 682px;
     height: 455px;
+  }
+
+  .making__play {
+    top: 189px;
+    left: 290px;
   }
 
   .making__title {
@@ -150,7 +191,7 @@
     }
   }
 
-  .making_demo {
+  .making__demo {
     padding: 6px 57px 60px 78px;
   }
 
